@@ -1,0 +1,6 @@
+services:
+  patchops-chaos-harness:
+    build: .
+    environment:
+      - DEVIN_API_KEY=${DEVIN_API_KEY:-}
+    command: ["pytest", "-v"]
